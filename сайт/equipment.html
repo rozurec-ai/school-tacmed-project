@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Оборудование</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Средства для оказания первой помощи</div>
+</header>
+
+<nav>
+    <a href="main.html">Главная</a>
+    <a href="firsthelp.html">Первая помощь</a>
+    <a href="otherhelp.html">Основы взаимопомощи</a>
+    <a href="law.html">Законодательство</a>
+    <a href="selfhelp.html">Самопомощь</a>
+</nav>
+
+<main>
+    <div class="section">
+        <h2>Средства для оказания первой помощи</h2>
+        <p><b>Какие средства существуют, чтобы оказать первую помощь?</p><br>
+<p>
+Жгут Эсмарха-используется для временной остановки крови. Представляет собой резиновую ленту 1,5 метра длиной.
+</p><img src="Жгут.jpg" alt="жгут эсмарха">
+<p>Турникет-тоже используется для временной остановки крови. Представляет собой ленту из плотного, синтетического материала. Есть много видов, самый распространенный-турникет-закрутка, после наложения вороток фиксируется, и услиливает затягивание.</p>
+<img src="Турникет.png" alt="турникет"><p>Бинт марлевый медицинский. Предназначен для наложения повязок и фиксации кончностей.</p><img src="Бинт.jpg" alt="бинт">
+<p>Пластырь бактерицидный.Предназанчен для закрытия мелких ран и порезов</p><img src="Пластырьбакт.jpg" alt="пласт. бакт.">
+<p>Пластырь рулонный. Предназанчен для для фиксации повязок.</p><img src="Пластырь.jpg" alt="пласт.">
+<p>Ножницы для перевязочного материала.Предназаначены для вскрытия перевязочного материала и разреза одежды пострадавшего если это потребуется.</p><img src="Ножницы.jpg" alt="ножницы">
+<p>Устройство для проведения исскуственного дыхания "Рот-Устройство-Рот"</p><img src="Рур.jpg" alt="Р-у-Р">
+<p>Перчатки медицинские. Защита участника оказания первой помощи от контакта с кровью и биологическими жидкостями пострадвшего</p> <img src="Перчатки.jpg" alt="перчатки">
+<p>Покрывало спасательное. Нужно для укрытия пострадавшего с тяжелой травмой серебристой стороной вверх.</p> <img src=Покрывало.jpg" alt="покрывало">        
+
+</div>
+</main>
+
+<footer>
+    Учебный проект • Первая помощь
+</footer>
+<script>
+    // Функция для управления всплывающими изображениями
+    document.querySelectorAll('.tooltip').forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+            const imgSrc = item.getAttribute('data-image');
+            const imgElement = document.createElement('img');
+            imgElement.src = imgSrc;
+            imgElement.classList.add('tooltip-image');
+            item.appendChild(imgElement);
+        });
+
+        item.addEventListener('mouseleave', function() {
+            const imgElement = item.querySelector('img');
+            if (imgElement) {
+                item.removeChild(imgElement);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
